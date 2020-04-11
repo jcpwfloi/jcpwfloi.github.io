@@ -14,7 +14,7 @@ In the mean time, while I'm still working on i18n of the blog, all posts will be
 ## What will I post here?
 - [x] Interesting code snippets
 - [x] Photos (for food, scenery, etc.)
-- [x] Music (Classical, Popular, EDM)
+- [x] Music (classical, popular, EDM)
 - [x] Maths (of course)
 - [ ] NSFW (there won't be, ever)
 - [ ] Politics (no, no)
