@@ -19,4 +19,8 @@ In the mean time, while I'm still working on i18n of the blog, all posts will be
 - [ ] NSFW (there won't be, ever)
 - [ ] Politics (no, no)
 
+[Read More...](2020/04/11/new-blog)
 <!--more-->
+
+## LaTeX tests
+$$\int_0^\infty f(t)dt$$

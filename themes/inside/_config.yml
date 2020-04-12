@@ -384,8 +384,37 @@ pwa:
 # ```bash
 # npm install babel-core babel-preset-env html-minifier uglify-js --save
 # ```
-# plugins:
-#   # Dynamic inject html snippet
+plugins:
+  - position: post
+    template: |
+      <script>
+      if (!window.MathJax || !MathJax.Hub) {
+        const script = document.createElement('script');
+        script.src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+        document.head.appendChild(script);
+      } else MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+      </script>
+  - position: comments
+    template: |
+      <div id="disqus_thread"></div>
+      <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jcpwfloi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 #   - position: # `sidebar` | `post` | `page` | `comments` | `avatar`, can be an array
 
 #     # HTML code
@@ -416,16 +445,8 @@ pwa:
 
 #   # Inline script
 #   # <script type="text/x-mathjax-config">MathJax.Hub.Config({...})</script>
-#   - tag: script
-#     type: text/x-mathjax-config
-#     code: |
-#         MathJax.Hub.Config({
-#           showProcessingMessages: false,
-#           messageStyle: 'none',
-#           tex2jax: { inlineMath: [['s;,'s;], ['\\(','\\)']] }
-#         })
-#     # Or a path relative to theme folder
-#     code: snippets/mathjax-config.js
+     # Or a path relative to theme folder
+     #code: snippets/mathjax-config.js
 
 #   # Inline style
 #   # <style>.mycss{...}</style>

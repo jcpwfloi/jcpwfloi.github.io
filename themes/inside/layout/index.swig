@@ -30,4 +30,17 @@
 <{{ theme.runtime.selector }}></{{ theme.runtime.selector }}>
 {{ theme.scripts | safe }}
 </body>
+<script>
+  if (!window.MathJax || !MathJax.Hub) {
+    const script = document.createElement('script');
+    script.src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+    document.head.appendChild(script);
+  } else {
+    MathJax.Hub.Config({
+      showProcessingMessages: false,
+      messageStyle: 'none',
+      tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }
+    })
+  }
+</script>
 </html>
