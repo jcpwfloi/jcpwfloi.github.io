@@ -8,7 +8,7 @@ branches:
     - hexo # build master branch only
 script:
   - hexo generate # generate static files
-  - cat "jcpwfloi.com" > public/CNAME
+  - echo "jcpwfloi.com" > public/CNAME
 deploy:
   provider: pages
   skip-cleanup: true
