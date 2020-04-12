@@ -23,4 +23,4 @@ In the mean time, while I'm still working on i18n of the blog, all posts will be
 <!--more-->
 
 ## LaTeX tests
-$$\int_0^\infty f(t)dt$$
+$$X_k=\sum_{n=0}^N x_k \cdot e^{-2k\pi i n/N}$$
