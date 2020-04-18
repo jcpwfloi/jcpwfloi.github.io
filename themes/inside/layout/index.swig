@@ -30,6 +30,7 @@
 <{{ theme.runtime.selector }}></{{ theme.runtime.selector }}>
 {{ theme.scripts | safe }}
 </body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script>
   if (!window.MathJax || !MathJax.Hub) {
     const script = document.createElement('script');
