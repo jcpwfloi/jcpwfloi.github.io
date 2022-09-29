@@ -285,13 +285,13 @@ copyright:
 # Built-in support Disqus (https://disqus.com) and LiveRe (https://livere.com),
 # for other comment system, see plugins
 comments:
-  #disqus:
+  # disqus:
   #  shortname: jcpwfloi
-  #  script: //jcpwfloi.disqus.com/embed.js
-  #   # Or you can set disqus script URL directly
-  #   script: //disqus_shortname.disqus.com/embed.js
-  #   # Autoload, default to `true`, set to `false` to display a button
-  #   autoload: false
+   # script: //jcpwfloi.disqus.com/embed.js
+    # Or you can set disqus script URL directly
+    # script: //disqus_shortname.disqus.com/embed.js
+    # Autoload, default to `true`, set to `false` to display a button
+    # autoload: false
 
   # livere:
   #   uid: livere_uid
