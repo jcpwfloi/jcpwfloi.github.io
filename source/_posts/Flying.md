@@ -5,6 +5,7 @@ tags:
 	- travel
 	- PhD
 	- flights
+mathjax: true
 ---
 
 Supercommuting between two cities isn't easy, but it's much more manageable when I'm only doing it weekly. There are a few things one need to consider if one ever need to supercommute:
@@ -44,7 +45,12 @@ To ensure that we are speaking the same language, I'll start with definitions so
 
 ## Cheaper Last-mile Connections
 
-Perhaps you may think it is more expensive flying than last-mile connections. Well -- it rarely is the case. 
+Perhaps you may think it is more expensive flying than last-mile connections. Well -- it rarely is the case. In fact, last-mile connections can easily be more expensive than your flight. Imagine that you are 20 miles from the airport and your destination is also around 20 miles away from your destination airport, you can easily spend 60+ dollars on ridesharing and only around 55 dollars on your one-way flight. I personally am used to flying between Raleigh and New York, and have seen prices as low as 38 dollars one-way.
+
+To tackle last-mile connections, you can do one of the following:
+
+* Relocate to somewhere with easy and reliable transit access to the airport. You are a frequent flyer, so relocating is worth it.
+* 
 
 # Save Time
 
